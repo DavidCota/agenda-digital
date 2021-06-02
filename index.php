@@ -1,10 +1,10 @@
 <?php
-
-require 'conexion.php';
 session_start();
+require 'conexion.php';
 
 if($_POST){
 
+    
     $usuario = $_POST['usuario'];
     $password = $_POST['password'];
 
@@ -22,10 +22,10 @@ if($_POST){
         if($password_bd == $pass_c){
 
             $_SESSION['id'] = $row['id'];
-            $_SESSION['nombre'] = $row['nombre'];
+            $_SESSION['nombre'] = $row['Nombre'];
             $_SESSION['tipo_usuario'] = $row['tipo_usuario'];
-
-            header("Location: main.php");
+            header("HTTP/1.1 302 Moved Temporarily"); 
+                 header("Location: main.php");
 
         } else {
 
