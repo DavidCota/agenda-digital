@@ -25,7 +25,7 @@ if($_POST){
             $_SESSION['nombre'] = $row['nombre'];
             $_SESSION['tipo_usuario'] = $row['tipo_usuario'];
 
-            header("Location: main.html");
+            header("Location: main.php");
 
         } else {
 
