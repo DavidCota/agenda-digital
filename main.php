@@ -565,7 +565,7 @@ $nombre = $_SESSION['nombre'];
                 <div class="modal-body">Selecciona "Salir" para cerrar session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Regresar</button>
-                    <a class="btn btn-primary" href="login.php">Salir</a>
+                    <a class="btn btn-primary" href="index.php">Salir</a>
                 </div>
             </div>
         </div>
